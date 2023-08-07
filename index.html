@@ -462,112 +462,134 @@
     <section class="donate" id="donate">
       <div class="donate__section-body">
         <div class="container donate-container">
-          <div class="donate__first-part">
-            <div class="donate__title">Пожертвувати:</div>
-            <div class="donate__description">Якщо у вас є бажання і можливість
-              благословити церкву фінансово і тим самим підтримати нас у
-              служінні, Ви можете здійснити добровільне пожертвування наступними
-              способами:
+          <div class="donate-wrapper">
+            <div class="donate__first-part">
+              <div class="donate__title">Пожертвувати:</div>
+              <div class="donate__description">Якщо у вас є бажання і можливість
+                благословити церкву фінансово і тим самим підтримати нас у
+                служінні, Ви можете здійснити добровільне пожертвування наступними
+                способами:
+              </div>
+              <div class="donate__buttons">
+                <div class="donate__paypal"
+                    data-title="PayPal Details:"
+                    data-name="Genadiy Morkva"
+                    data-email="morkva@example.com">
+                  <div class="donate__paypal-link">
+                    <img class="donate__paypal-img"
+                    src="./src/styles/images/paypal-logo.svg"
+                     alt="paypal">
+                  </div>
+                  <div class="donate__button-text
+                  donate__button-text-paypal">Paypal</div>
+                </div>
+
+                <div class="donate__moneygram"
+                data-title="Money Gram Details:"
+                data-name="Genadiy Morkva"
+                data-email="morkva@example.com"
+                data-number="+38099999999">
+                  <div class="donate__moneygram-link">
+                    <img  class="donate__moneygram-img"
+                    src="./src/styles/images/moneygram-logo.svg"
+                    alt="moneygram">
+                  </div>
+                  <div class="donate__button-text
+                  donate__button-text-moneygram">Moneygram</div>
+                </div>
+
+                <div class="donate__western-union"
+                data-title="Westert Union Details:"
+                data-name="Genadiy Morkva"
+                data-email="morkva@example.com"
+                data-number="+38099999999">
+                  <div class="donate__western-union-link">
+                    <img  class="donate__western-union-img"
+                    src="./src/styles/images/westernunion-logo.svg"
+                    alt="western-union">
+                  </div>
+                  <div class="donate__button-text
+                  donate__button-text-western">Western Union</div>
+                </div>
+              </div>
+
+              <div class="donate__requisites">
+                <div class="donate__requisite
+                donate__requisites-uah"
+                data-title2="Реквізити в UAH:"
+                data-organization="Релігійна організація 'xxxxxxxxxxxxxxx'"
+                data-edrpu="ЄДРПОУ XXXXXXX"
+                data-bank="Назва Банку: poroh-bank"
+                data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
+                data-disclaimer="Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ">UAH</div>
+
+                <div class="donate__requisite
+                donate__requisites-usd"
+                data-title2="Реквізити в USD:"
+                data-organization="Religion organization 'xxxxxxxxxxxxxxx'"
+                data-edrpu="ЄДРПОУ XXXXXXX"
+                data-bank="Bank name: zele-bank"
+                data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
+                data-disclaimer="Warning!!! Purpose of payment: Voluntary donations">USD</div>
+
+                <div class="donate__requisite
+                donate__requisites-eur"
+                data-title2="Реквізити в EUR:"
+                data-organization="Religion organization 'xxxxxxxxxxxxxxx'"
+                data-edrpu="ЄДРПОУ XXXXXXX"
+                data-bank="Bank name: arestovych-bank"
+                data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
+                data-disclaimer="Warning!!! Purpose of payment: Voluntary donations">EUR</div>
+              </div>
             </div>
-            <div class="donate__buttons">
-              <div class="donate__paypal expandable" 
-              data-title="PayPal Details:"
-              data-name="Genadiy Morkva" 
-              data-email="morkva@example.com">
-
-                <div class="donate__paypal-link">
-                  <img class="donate__paypal-img"
-                  src="./src/styles/images/paypal-logo.svg"
-                   alt="paypal">
+            <div class="donate__border"></div>
+            <div class="donate__second-part">
+              <div class="donate__field-body">
+                <form class="donate__form" id="donate__form" action="index.html">
+                  <div class="donate__currency-choose">
+                    <div class="donate__currency-dropdown">
+                      <span class="donate__currency-choosed">₴</span>
+                      <ul class="donate__currency-list">
+                        <li class="donate__currency-item" data-value="₴">₴</li>
+                        <li class="donate__currency-item" data-value="$">$</li>
+                        <li class="donate__currency-item" data-value="€">€</li>
+                      </ul>
+                      <div class="donate__currency-arrow">
+                        <img src="./src/styles/images/currency-arrow.svg" alt="choose-currency" class="donate__currency-arrow-img">
+                      </div>
+                    </div>
+                  </div>
+                  <input class="donate__field"
+                  id="donate__field"
+                  type="text"
+                  placeholder="100">
+                  <div class="donate__field-border"></div>
+                </form>
+                <div class="donate__fix-buttons">
+                  <div class="donate__fix-button">100</div>
+                  <div class="donate__fix-button donate__fix-button-500">500</div>
+                  <div class="donate__fix-button donate__fix-button-1000">1000</div>
                 </div>
-                <div class="donate__button-text">Paypal</div>
+                <a href="" class="donate__pay-button">
+                  <span class="donate__pay-link">Сплатити</span>
+                </a>
               </div>
-
-              <div class="donate__moneygram expandable" 
-              data-title="Money Gram Details:"
-              data-name="Genadiy Morkva" 
-              data-email="morkva@example.com"
-              data-number="+38099999999">
-
-                <div class="donate__moneygram-link">
-                  <img  class="donate__moneygram-img"
-                  src="./src/styles/images/moneygram-logo.svg"
-                  alt="moneygram">
-                </div>
-                <div class="donate__button-text">Moneygram</div>
-              </div>
-
-              <div class="donate__western-union expandable"
-              data-title="Westert Union Details:"
-              data-name="Genadiy Morkva" 
-              data-email="morkva@example.com"
-              data-number="+38099999999">
-
-                <div class="donate__western-union-link">
-                  <img  class="donate__western-union-img"
-                  src="./src/styles/images/westernunion-logo.svg"
-                  alt="western-union">
-                </div>
-                <div class="donate__button-text">Western Union</div>
-              </div>
-            </div>
-
-            <div class="donate__requisites">
-              <div class="donate__requisite 
-              donate__requisites-uah
-              expandable"
-              data-title="Реквізити в UAH"
-              data-organization="Релігійна організація 'xxxxxxxxxxxxxxx'"
-              data-edrpu="ЄДРПОУ XXXXXXX"
-              data-bank="Назва Банку: poroh-bank"
-              data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
-              data-disclaimer="Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ">UAH</div>
-
-              <div class="donate__requisite 
-              donate__requisites-usd 
-              expandable">USD</div>
-
-              <div class="donate__requisite 
-              donate__requisites-eur 
-              expandable">EUR</div>
             </div>
           </div>
 
-          <div class="donate__border"></div>
-
-          <div class="donate__second-part">
-            <div class="donate__field-body">
-              <form class="donate__form" id="donate__form" action="index.html">
-                <div class="donate__currency-choose">
-                  <div class="donate__currency-dropdown">
-                    <span class="donate__currency-choosed">₴</span>
-                    <ul class="donate__currency-list">
-                      <li class="donate__currency-item" data-value="₴">₴</li>
-                      <li class="donate__currency-item" data-value="$">$</li>
-                      <li class="donate__currency-item" data-value="€">€</li>
-                    </ul>
-                    <div class="donate__currency-arrow">
-                      <img src="./src/styles/images/currency-arrow.svg" alt="choose-currency" class="donate__currency-arrow-img">
-                    </div>
-                  </div>
-        
-                </div>
-                <input class="donate__field"
-                id="donate__field"
-                type="text"
-                placeholder="100">
-                <div class="donate__field-border"></div>
-              </form>
-        
-              <div class="donate__fix-buttons">
-                <div class="donate__fix-button">100</div>
-                <div class="donate__fix-button donate__fix-button-500">500</div>
-                <div class="donate__fix-button donate__fix-button-1000">1000</div>
-              </div>
-              <a href="" class="donate__pay-button">
-                <span class="donate__pay-link">Сплатити</span>
-              </a>
-            </div>
+          <div id="modal__requisites-data" class="requisites-modal">
+            <div class="modal__requisites-border"></div>
+            <div id="dynamicTitle" class="modal__requisites-title"></div>
+            <div id="dynamicName" class="modal__requisites-name"></div>
+            <div id="dynamicText" class="modal__requisites-text"></div>
+            <div id="dynamicEmail" class="modal__requisites-email"></div>
+            <div id="dynamicNumber" class="modal__requisites-number"></div>
+            <div id="requisitesTitle" class="modal__requisites-title2"></div>
+            <div id="dynamicOrg" class="modal__requisites-organization"></div>
+            <div id="dynamicEdrpu" class="modal__requisites-edrpu"></div>
+            <div id="dynamicBank" class="modal__requisites-bank"></div>
+            <div id="dynamicIban" class="modal__requisites-iban"></div>
+            <div id="dynamicDisc" class="modal__requisites-disclaimer"></div>
           </div>
           </div>
         </div>

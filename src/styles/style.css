@@ -757,12 +757,20 @@ body.body-modal-open {
 }
 
 .donate-container {
-  height: 580px;
-  display: flex;
+  max-height: 580px;
   border-radius: 50px;
   border: 13px solid #202020;
   box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.donate-container.active {
+  max-height: 980px;
+}
+
+.donate-wrapper {
+  display: flex;
 }
 
 .donate__first-part {
@@ -805,7 +813,9 @@ body.body-modal-open {
   cursor: pointer;
 }
 
-.donate__paypal.active {
+.donate__paypal.active,
+.donate__moneygram.active,
+.donate__western-union.active {
   background-color: #202020;
 }
 
@@ -821,10 +831,6 @@ body.body-modal-open {
   text-decoration: none;
   color: #202020;
   text-align: center;
-}
-
-.donate__paypal-link.active {
-  color: #fff;
 }
 
 .donate__paypal-img,
@@ -864,6 +870,11 @@ body.body-modal-open {
   color: #202020;
 }
 
+.donate__requisite.active {
+  background-color: #202020;
+  color: #fff;
+}
+
 .donate__requisites-usd {
   margin-left: 25px;
 }
@@ -871,6 +882,63 @@ body.body-modal-open {
 .donate__requisites-eur {
   margin-left: 25px;
 }
+
+.modal__requisites-border {
+  width: 670px;
+  height: 1px;
+  background-color:  #E0E0E0;
+  margin-bottom: 33px;
+}
+
+.requisites-modal {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+
+.requisites-modal.active {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 57px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__requisites-title,
+.modal__requisites-title2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.modal__requisites-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal__requisites-email,
+.modal__requisites-number,
+.modal__requisites-organization,
+.modal__requisites-edrpu,
+.modal__requisites-bank,
+.modal__requisites-iban,
+.modal__requisites-disclaimer {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.modal__requisites-edrpu,
+.modal__requisites-iban {
+  margin-bottom: 20px;
+}
+
 /* #endregion */
 .donate__border {
   width: 525px;
