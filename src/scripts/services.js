@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalImage = modal.querySelector('#modalImage');
   const modalMainTitle = modal.querySelector('#modalMainTitle');
   const modalMainText = modal.querySelector('#modalMainText');
+  const mask = document.querySelector('.services')
 
   serviceItemLinks.forEach(link => {
     link.addEventListener('click', function(event) {
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
       modalMainText.textContent = itemDescription;
 
       modal.classList.add('active');
+      mask.classList.add('active');
       document.body.classList.add('body-modal-open');
     });
   });
@@ -52,13 +54,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeButton = modal.querySelector('.modal-close-btn');
   closeButton.addEventListener('click', function() {
     modal.classList.remove('active');
+    mask.classList.remove('active');
     document.body.classList.remove('body-modal-open');
   });
 
   window.addEventListener('click', function(event) {
     if (event.target === modal) {
       modal.classList.remove('active');
-      document.body.classList.remove('body-modal-open');
     }
   });
 });
