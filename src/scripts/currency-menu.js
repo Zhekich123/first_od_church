@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 const numberInput = document.querySelector('.donate__field');
 
 numberInput.oninput = function (event) {
@@ -58,5 +56,37 @@ fixButtons.forEach(button => {
     fieldInput.value = value; // Присваиваем значение кнопки в поле ввода
   });
 });
+
+
+
+// for Requisites
+
+const expandableContainer = document.querySelector('.expandable');
+const requisitesBlocks = document.querySelectorAll('.donate__requisites');
+const requisitesText = document.querySelector('.donate__requisite-text');
+
+function toggleExpand(event) {
+  const requisites = event.currentTarget.getAttribute('data-requisites');
+
+  if (expandableContainer.classList.contains('expanded')) {
+    expandableContainer.classList.remove('expanded');
+    requisitesText.textContent = '';
+  } else {
+    expandableContainer.classList.add('expanded');
+    requisitesText.textContent = requisites;
+  }
+}
+
+requisitesBlocks.forEach(block => {
+  block.addEventListener('click', toggleExpand);
+});
+
+expandableContainer.addEventListener('click', (event) => {
+  if (event.target === expandableContainer) {
+    expandableContainer.classList.remove('expanded');
+    requisitesText.textContent = '';
+  }
+});
+
 
 
