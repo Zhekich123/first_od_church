@@ -1489,7 +1489,10 @@ body.body-modal-open {
 }
 
 .header__burger.active {
-  margin-top: -310px;
+  position: absolute;
+  /* margin: -110px 0 0 -110px; */
+  left: 650px;
+  bottom: 380px;
 }
 
 
