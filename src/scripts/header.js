@@ -59,8 +59,6 @@ window.addEventListener('scroll', toggleNavClasses);
 
 // burger menu
 
-// burger menu
-
 const burgerIcon = document.querySelector('.header__burger-icon');
 const logotypeSection = document.querySelector('.logotype');
 const logoTitleScroll = document.querySelector('.logo-title');

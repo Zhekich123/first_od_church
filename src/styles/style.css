@@ -1488,7 +1488,7 @@ body.body-modal-open {
 }
 
 .header__burger.active {
-  margin-top: -100px;
+  margin-top: -110px;
 }
 
 
@@ -1726,9 +1726,12 @@ body.body-modal-open {
   margin-top: -90px
 }
 
-.service-item__title--3,
-.service-item__title--6 {
+.service-item__title--3 {
   margin: -135px 0 0 0;
+}
+
+.service-item__title--6 {
+  margin: -155px 0 0 0;
 }
 
 .service-item__title--7 {
