@@ -220,6 +220,7 @@ html {
 
 .language-item {
   list-style: none;
+  pointer-events: none;
 }
 
 .language-link {
