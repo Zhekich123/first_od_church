@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>First Baptist Church of Odessa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,38 +17,108 @@
           <li class="nav__item">
             <a href="#schedule" class="nav__link">Розклад</a>
           </li>
+
           <li class="nav__item">
             <a href="#stream" class="nav__link">Трансляція</a>
           </li>
+
           <li class="nav__item">
             <a href="#about-us" class="nav__link nav__link--about">Про нас</a>
           </li>
+
         </ul>
         <div class="logotype">
           <a href="#" class="logo__link">
             <img src="./src/styles/images/logo.svg" alt="logo"
               class="logo__image">
           </a>
+
           <a href="#" class="logo__link-black">
             <img src="./src/styles/images/logo-black.svg" alt="logo"
               class="logo__image-black">
           </a>
-    
+
           <div class="logo-title">Перша Одеська
-            <br> Баптиська Церква
+            <br> Баптистська Церква
           </div>
         </div>
+
         <ul class="nav__list nav__list--2">
           <li class="nav__item">
             <a href="#services" class="nav__link">Служіння</a>
           </li>
+
           <li class="nav__item">
             <a href="#donate" class="nav__link">Пожертвувати</a>
           </li>
+
           <li class="nav__item">
             <a href="#contacts" class="nav__link">Контакти</a>
-          </li>
-        </ul>
+          </li> 
+          </ul>
+
+          <div class="header__burger">
+            <span class="header__burger-icon"></span>
+          </div>
+
+         <aside class="header__burger-menu">
+           <div class="logo-burger-wrapper">
+             <div class="header__logotype-burger">
+              <a href="#" class="logo__link-black-burger">
+                <img src="./src/styles/images/logo-black.svg" alt="logo"
+                  class="logo__image-black-burger">
+              </a>
+              <div class="logo-title-burger">Перша Одеська
+                <br> Баптистська Церква
+              </div>
+              </div>
+           </div>
+
+          <ul class="nav__list-burger">
+            <li class="nav__item-burger">
+              <a href="#services" class="nav__link-burger">Служіння</a>
+            </li>
+            <div class="nav__item-border"></div>
+  
+            <li class="nav__item-burger">
+              <a href="#donate" class="nav__link-burger">Пожертвувати</a>
+            </li>
+            <div class="nav__item-border"></div>
+  
+            <li class="nav__item-burger">
+              <a href="#contacts" class="nav__link-burger">Контакти</a>
+            </li>
+            <div class="nav__item-border"></div>
+
+            <li class="nav__item-burger">
+              <a href="#schedule" class="nav__link-burger">Розклад</a>
+            </li>
+            <div class="nav__item-border"></div>
+  
+            <li class="nav__item-burger">
+              <a href="#stream" class="nav__link-burger">Трансляція</a>
+            </li>
+            <div class="nav__item-border"></div>
+  
+            <li class="nav__item-burger">
+              <a href="#about-us" class="nav__link-burger nav__link--about">Про нас</a>
+            </li>
+            <div class="nav__item-border"></div>
+          </ul>
+
+          <ul class="languages-list-burger">
+            <li class="language-item">
+              <a href="#" class="language-link-burger">EN</a>
+            </li>
+            <li class="language-item language-item--ua">
+              <a href="#" class="language-link-burger">UA</a>
+            </li>
+            <li class="language-item language-item--ru">
+              <a href="#" class="language-link-burger">RU</a>
+            </li>
+          </ul>
+         </aside>
+
       </div>
     </nav>
 
@@ -91,7 +161,7 @@
             
             <div class="schedule__list--wrapper">
               <div class="schedule__item--wrapper">
-                <li class="schedule__item schedule__item--name">Вівторок</li>
+                <li class="schedule__item schedule__item--name">Вівторок:</li>
                 <div class="schedule__small-text">Вечірнє зібрання</div>
               </div>
               <li class="schedule__item schedule__item--time">18:00</li>
@@ -108,7 +178,7 @@
             <div class="schedule__list--wrapper">
               <div class="schedule__item--wrapper">
                 <li class="schedule__item schedule__item--name">Пʼятниця:</li>
-                <div class="schedule__small-text">Цілодобова молитва</div>
+                <div class="schedule__small-text">Цілодобова молитва по гуртах</div>
               </div>
             </div>
           </ul>
@@ -197,9 +267,7 @@
         
         <div id="modal" class="service-modal">
           <div class="modal-content">
-            <img src="./src/styles/images/close-button-dark.svg" 
-            class="modal-close-btn" 
-            alt="close">
+            <div class="modal-close-btn" alt="close"></div>
             <img 
             src="" 
             alt="modal-image" 
@@ -311,15 +379,15 @@
           <div class="service-item service-item--4">
             <div class="service-item__info">
               <div class="service-item__top">
-                <div class="service-item__title">Сімейне</div>
+                <div class="service-item__title service-item__title--4">Сімейне</div>
               </div>
 
-              <div class="service-item__description">Служіння, яке 
+              <div class="service-item__description service-item__description--4">Служіння, яке 
               направлене на побудову здорових сімейних стосунків на основі 
               Біблії.
               </div>
 
-              <a href="" class="service-item__link"
+              <a href="" class="service-item__link service-item__link--4"
               data-modal-title="Сімейне служіння включає в себе: "
               data-modal-text="Питання як будувати стосунки чоловіку з своєю 
               дружиною і дружині зі своїм чоловіком так, щоб у родині був мир і 
@@ -464,22 +532,24 @@
         <div class="container donate-container">
           <div class="donate-wrapper">
             <div class="donate__first-part">
-              <div class="donate__title">Пожертвувати:</div>
-              <div class="donate__description">Якщо у вас є бажання і можливість
-                благословити церкву фінансово і тим самим підтримати нас у
-                служінні, Ви можете здійснити добровільне пожертвування наступними
-                способами:
+              <div class="donate__text-wrapper">
+                <div class="donate__title">Пожертвувати:</div>
+                <div class="donate__description">Якщо у вас є бажання і можливість
+                  благословити церкву фінансово і тим самим підтримати нас у
+                  служінні, Ви можете здійснити добровільне пожертвування наступними
+                  способами:
+                </div>
               </div>
               <div class="donate__buttons">
                 <div class="donate__paypal"
                     data-title="PayPal Details:"
                     data-name="Genadiy Morkva"
                     data-email="morkva@example.com">
-                  <div class="donate__paypal-link">
+                  <a class="donate__paypal-link" href="#donate__pay-button">
                     <img class="donate__paypal-img"
                     src="./src/styles/images/paypal-logo.svg"
                      alt="paypal">
-                  </div>
+                  </a>
                   <div class="donate__button-text
                   donate__button-text-paypal">Paypal</div>
                 </div>
@@ -489,11 +559,11 @@
                 data-name="Genadiy Morkva"
                 data-email="morkva@example.com"
                 data-number="+38099999999">
-                  <div class="donate__moneygram-link">
+                  <a class="donate__moneygram-link" href="#donate__pay-button">
                     <img  class="donate__moneygram-img"
                     src="./src/styles/images/moneygram-logo.svg"
                     alt="moneygram">
-                  </div>
+                  </a>
                   <div class="donate__button-text
                   donate__button-text-moneygram">Moneygram</div>
                 </div>
@@ -503,43 +573,46 @@
                 data-name="Genadiy Morkva"
                 data-email="morkva@example.com"
                 data-number="+38099999999">
-                  <div class="donate__western-union-link">
+                  <a class="donate__western-union-link" href="#donate__pay-button">
                     <img  class="donate__western-union-img"
                     src="./src/styles/images/westernunion-logo.svg"
                     alt="western-union">
-                  </div>
+                  </a>
                   <div class="donate__button-text
                   donate__button-text-western">Western Union</div>
                 </div>
               </div>
 
               <div class="donate__requisites">
-                <div class="donate__requisite
+                <a class="donate__requisite
                 donate__requisites-uah"
+                href="#donate__pay-button"
                 data-title2="Реквізити в UAH:"
                 data-organization="Релігійна організація 'xxxxxxxxxxxxxxx'"
                 data-edrpu="ЄДРПОУ XXXXXXX"
                 data-bank="Назва Банку: poroh-bank"
                 data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
-                data-disclaimer="Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ">UAH</div>
+                data-disclaimer="Увага!!! Призначення платежа: ДОБРОВIЛЬНI ПОЖЕРТВУВАННЯ">UAH</a>
 
-                <div class="donate__requisite
+                <a class="donate__requisite
                 donate__requisites-usd"
+                href="#donate__pay-button"
                 data-title2="Реквізити в USD:"
                 data-organization="Religion organization 'xxxxxxxxxxxxxxx'"
                 data-edrpu="ЄДРПОУ XXXXXXX"
                 data-bank="Bank name: zele-bank"
                 data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
-                data-disclaimer="Warning!!! Purpose of payment: Voluntary donations">USD</div>
+                data-disclaimer="Warning!!! Purpose of payment: Voluntary donations">USD</a>
 
-                <div class="donate__requisite
+                <a class="donate__requisite
                 donate__requisites-eur"
+                
                 data-title2="Реквізити в EUR:"
                 data-organization="Religion organization 'xxxxxxxxxxxxxxx'"
                 data-edrpu="ЄДРПОУ XXXXXXX"
                 data-bank="Bank name: arestovych-bank"
                 data-iban="IBAN: XXXXXXXXXXXXXXXXXXX"
-                data-disclaimer="Warning!!! Purpose of payment: Voluntary donations">EUR</div>
+                data-disclaimer="Warning!!! Purpose of payment: Voluntary donations">EUR</a>
               </div>
             </div>
             <div class="donate__border"></div>
@@ -570,7 +643,7 @@
                   <div class="donate__fix-button donate__fix-button-500">500</div>
                   <div class="donate__fix-button donate__fix-button-1000">1000</div>
                 </div>
-                <a href="" class="donate__pay-button">
+                <a href="" class="donate__pay-button" id="donate__pay-button">
                   <span class="donate__pay-link">Сплатити</span>
                 </a>
               </div>
@@ -600,7 +673,7 @@
       <div class="container contacts-container">
         <div class="contacts-body">
           <div class="contacts-text">
-            <div class="contscts__title">Контакти:</div>
+            <div class="contacts__title">Контакти:</div>
             <div class="contacts__description">Якщо Ви бажаєте більше дізнатися про Бога,
               християнську віру чи церкву, ми будемо раді зустрітися на зібраннях церкви.
             </div>
@@ -642,7 +715,9 @@
 
           <div class="contacts-map">
             <div class="contacts-map__image">
-              <img src="./src/styles/images/google-map.png" alt="google-map">
+              <img class="contacts-map__church" 
+              src="./src/styles/images/google-map.png" 
+              alt="google-map">
             </div>
 
             <a href="https://www.google.com.ua/maps/place/%D0%9A%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D1%8B%D1%88%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+8,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4710513,30.7157464,17.45z/data=!4m6!3m5!1s0x40c63189dfe65461:0x9968a891bfcb3fb2!8m2!3d46.4707148!4d30.7161277!16s%2Fg%2F11b8v58g6r?hl=ru&entry=ttu" 

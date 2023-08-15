@@ -1,5 +1,7 @@
 'use strict';
 
+// fix price buttons
+
 const numberInput = document.querySelector('.donate__field');
 
 numberInput.oninput = function (event) {
@@ -63,7 +65,7 @@ fixButtons.forEach(button => {
 // for Requisites
 
 const buttonsBlocks = document.querySelectorAll('.donate__buttons > div');
-const requisitesBlocks = document.querySelectorAll('.donate__requisites > div');
+const requisitesBlocks = document.querySelectorAll('.donate__requisites > a');
 
 const modal = document.getElementById('modal__requisites-data');
 const modalTitle2 = document.getElementById('requisitesTitle');

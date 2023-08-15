@@ -1,9 +1,8 @@
 'use strict';
 
-// Получаем все элементы с классом 'item'
 const items = document.querySelectorAll('.language-link');
+const itemsBurger = document.querySelectorAll('.language-link-burger');
 
-// Функция для выключения класса у всех элементов, кроме выбранного
 function deactivateAllExcept(selectedItem) {
   items.forEach((item) => {
     if (item !== selectedItem) {
@@ -12,12 +11,9 @@ function deactivateAllExcept(selectedItem) {
   });
 }
 
-// Добавляем обработчик события 'click' на каждый элемент
 items.forEach((item) => {
   item.addEventListener('click', function () {
-    // При клике на элемент выключаем класс у всех остальных элементов
     deactivateAllExcept(item);
-    // Включаем/выключаем класс у текущего элемента
     item.classList.toggle('active');
   });
 });
@@ -58,4 +54,44 @@ function toggleNavClasses() {
 }
 
 window.addEventListener('scroll', toggleNavClasses);
+
+
+
+// burger menu
+
+// burger menu
+
+const burgerIcon = document.querySelector('.header__burger-icon');
+const logotypeSection = document.querySelector('.logotype');
+const logoTitleScroll = document.querySelector('.logo-title');
+const headerBurger = document.querySelector('.header__burger-menu');
+const navBurgerLink = document.querySelectorAll('.nav__link-burger');
+const navScroll = document.querySelector('.nav');
+const burgerBody = document.querySelector('.header__burger');
+
+function toggleMenu() {
+  burgerIcon.classList.toggle('open');
+  logotypeSection.classList.toggle('inactive');
+  headerBurger.classList.toggle('open');
+  logoTitleScroll.classList.toggle('active');
+  burgerBody.classList.toggle('active');
+
+  if (nav.classList.contains('active')) {
+    if (burgerBody.classList.contains('active')) {
+      navScroll.classList.add('scroll');
+    } else {
+      navScroll.classList.remove('scroll');
+    }
+  } else {
+    burgerBody.classList.remove('active');
+  }
+}
+
+burgerIcon.addEventListener('click', toggleMenu);
+
+navBurgerLink.forEach(link => {
+  link.addEventListener('click', function () {
+    toggleMenu();
+  });
+});
 
