@@ -2028,7 +2028,7 @@ margin-top: -45px;
 
   .contacts-map__church {
     max-width: 305px;
-    height: 150%;
+    height: 110%;
     object-fit: cover;
     border-radius: 30px;
   }
@@ -2037,7 +2037,7 @@ margin-top: -45px;
     width: 305px;
     height: 36px;
     font-size: 14px;
-    margin: 15px 0 0 0;
+    margin: -110px 0 0 0;
   }
 
   /* #endregion */
