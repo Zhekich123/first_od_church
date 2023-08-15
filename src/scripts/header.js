@@ -73,6 +73,7 @@ function toggleMenu() {
   headerBurger.classList.toggle('open');
   logoTitleScroll.classList.toggle('active');
   burgerBody.classList.toggle('active');
+  document.body.classList.toggle('body-modal-open');
 
   if (nav.classList.contains('active')) {
     if (burgerBody.classList.contains('active')) {

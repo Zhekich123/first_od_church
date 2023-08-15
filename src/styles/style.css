@@ -1462,7 +1462,7 @@ body.body-modal-open {
 
 .nav.active.scroll {
   height: 100%;
-  transform: translateY(10%);
+  transform: translateY(5%);
   top: -76px;
 }
 
