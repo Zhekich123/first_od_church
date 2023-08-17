@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.add('body-modal-open');
     });
   });
+  
 
   const closeButton = modal.querySelector('.modal-close-btn');
   closeButton.addEventListener('click', function() {
@@ -64,4 +65,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-

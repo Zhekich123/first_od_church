@@ -62,3 +62,21 @@ fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCuLo
   .catch(error => {
     console.error('Error:', error);
   });
+
+
+
+  // Функция для проверки разрешения экрана и удаления <br>
+function removeBrTag() {
+  const screenWidth = window.innerWidth;
+  const strimTitle = document.querySelector('.strim__title');
+  
+  if (screenWidth <= 740 && strimTitle) {
+    const brElement = strimTitle.querySelector('br');
+    if (brElement) {
+      strimTitle.removeChild(brElement);
+    }
+  }
+}
+
+window.addEventListener('load', removeBrTag);
+window.addEventListener('resize', removeBrTag);
