@@ -3334,7 +3334,7 @@ margin-top: -15px;
   /* #region header */
   .header__burger.active {
     position: absolute;
-    top: -200px;
+    top: -280px;
     left: 340px;
   }
   /* #endregion */
