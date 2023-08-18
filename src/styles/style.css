@@ -3458,7 +3458,7 @@ margin-top: -15px;
 /* #endregion */
   /* #region services */
   .services {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 .services-container {
   display: flex;
@@ -3473,10 +3473,14 @@ margin-top: -15px;
 }
 
 .services-list {
-  margin-top: 28px;
+  margin: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.services-list--1 {
+  margin-top: 28px;
 }
 
 .service-item {
@@ -3914,15 +3918,16 @@ margin-top: -15px;
 }
 
 .contacts-map__image {
-  max-width: 355px;
-  max-height: 373px;
+  width: 325px;
+  height: 325px;
   /* border: 1px solid black; */
   border-radius: 30px;
   margin: -20px 0 150px 0;
 }
 
 .contacts-map__church {
-  max-width: 323px;
+  width: 325px;
+  height: 325px;
   object-fit: cover;
   border-radius: 30px;
 }
