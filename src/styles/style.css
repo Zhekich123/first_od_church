@@ -1814,15 +1814,13 @@ margin-top: -45px;
 }
 
 .modal-content {
-  position: relative;
-  display: flex;
   flex-direction: column;
 }
 
 .modalText {
   display: flex;
   flex-direction: column;
-  margin: 90px 60px 0 60px;
+  margin: 60px 60px 0 20px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -1883,9 +1881,9 @@ margin-top: -45px;
 .modal-close-btn {
   position: absolute;
   cursor: pointer;
-  left: 640px;
-  margin: 30px 0 0 0;
-  padding: 0 30px 0 0;
+  display: flex;
+  left: 620px;
+  margin: 30px 30px 0 0;
 }
 
   /* #endregion */
@@ -2039,7 +2037,7 @@ margin-top: -45px;
 
   .contacts-map__church {
     max-width: 305px;
-    height: 110%;
+    height: 100%;
     object-fit: cover;
     border-radius: 30px;
   }
@@ -2255,6 +2253,9 @@ margin-top: -45px;
 }
 
 .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 380px;
 }
 
@@ -2269,7 +2270,7 @@ margin-top: -45px;
 }
 
 .slider__dotts {
-  margin: 388px 0 30px 155px;
+  margin: 388px 0 30px 0;
 }
 
 /* #endregion */
@@ -2742,7 +2743,6 @@ margin-top: -15px;
 
 .contacts-map__church {
   max-width: 323px;
-  height: 110%;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -2813,7 +2813,7 @@ margin-top: -15px;
 }
 
 .slider__dotts {
-  margin: 425px 0 0 140px;
+  margin: 425px 0 0 0;
 }
 /* #endregion */
 /* #region shedule */
@@ -3348,49 +3348,53 @@ margin-top: -15px;
 }
 
 .about-us__info {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .slider {
-  width: 365px;
+  width: 335px;
 }
 
 .slider__image {
-  width: 365px;
+  width: 335px;
   height: 373px;
 }
 
 .slider__image.active {
-  width: 365px;
+  width: 335px;
   height: 373px;
 }
 
 .slider__dotts {
-  margin: 425px 0 0 140px;
+  margin: 400px 0 0 0;
 }
 /* #endregion */
 /* #region shedule */
 .schedule-body {
   margin-top: 29px;
-  max-width: 370px;
-  max-height: 201px;
+  max-width: 350px;
+  max-height: 171px;
   border-radius: 25px;
   background-image: url('./images/schedule-background-small.svg');
 }
 
 .schedule__title {
   font-size: 20px;
-  margin: 57px 15px 0 21px;
+  margin: 50px 15px 0 5px;
 }
 
 .schedule__backspase {
   width: 2px;
-  height: 158px;
-  margin: 25px 19px 0 0;
+  height: 138px;
+  margin: 15px 19px 0 0;
+}
+
+.schedule__list--wrapper {
+  margin: 15px 10px 0 0;
 }
 
 .schedule__list {
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .schedule__item {
@@ -3442,7 +3446,7 @@ margin-top: -15px;
 }
 
 #player {
-  max-width: 370px;
+  max-width: 330px;
   height: 201px;
   margin-top: 30px;
 }
@@ -3477,7 +3481,7 @@ margin-top: -15px;
 
 .service-item {
   height: 360px;
-  width: 362px;
+  width: 332px;
   margin: 28px 0 0 0;
 }
 
@@ -3569,11 +3573,11 @@ margin-top: -15px;
 }
 
 .service-item__link--3 {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .service-item__link--4  {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .service-item__link--8 {
@@ -3581,7 +3585,7 @@ margin-top: -15px;
 }
 
 .service-item__link--6 {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .service-item__link--7 {
@@ -3589,7 +3593,8 @@ margin-top: -15px;
 }
 
 .service-modal.active {
-  width: 90%;
+  width: 100%;
+  height: 95%;
   box-sizing: border-box;
 }
 
@@ -3602,7 +3607,8 @@ margin-top: -15px;
 .modalText {
   display: flex;
   flex-direction: column;
-  margin: 20px 10px 0 10px;
+  margin: 20px 0 0 0;
+  padding: 0 10px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -3662,7 +3668,7 @@ margin-top: -15px;
 .modal-close-btn {
   position: absolute;
   margin: 30px 0 0 0;
-  left: 260px;
+  left: 250px;
   padding: 0 30px 0 0;
 }
   /* #endregion */
@@ -3698,13 +3704,14 @@ margin-top: -15px;
 .donate__title {
   font-size: 20px;
   font-weight: 840;
-  padding: 10px 330px 0 0;
+  padding: 20px 130px 10px 0;
   margin: 20px 0 0 0;
 }
 
 .donate__description {
   font-size: 13px;
   font-weight: 400;
+  margin-right: 0;
 }
 
 .donate__buttons,
@@ -3875,6 +3882,60 @@ margin-top: -15px;
   font-size: 13px;
 }
 /* #endregion */
+/* #region contacts */
+.contacts-container {
+  padding: 0 47px;
+}
+
+.contacts-body {
+  flex-direction: column;
+  padding: 40px 0 0 0;
+}
+
+.contacts__title {
+  font-size: 20px;
+}
+
+.contacts__description,
+.contacts__adress-text {
+  font-size: 11px;
+}
+
+.contacts__adress-title {
+  font-size: 15px;
+}
+
+.contacts__inst-page {
+  font-size: 11px;
+}
+
+.contacts-map {
+  margin: 40px 0 0 0;
+}
+
+.contacts-map__image {
+  max-width: 355px;
+  max-height: 373px;
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  margin: -20px 0 150px 0;
+}
+
+.contacts-map__church {
+  max-width: 323px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.contacts-map__link {
+  width: 323px;
+  height: 36px;
+  font-size: 14px;
+  margin: -110px 0 0 0;
+  border-radius: 9px;
+}
+/* #endregion */
+
 }
 /* #endregion */
 
