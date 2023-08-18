@@ -2734,8 +2734,8 @@ margin-top: -15px;
 }
 
 .contacts-map__image {
-  max-width: 355px;
-  max-height: 373px;
+  width: 355px;
+  height: 373px;
   /* border: 1px solid black; */
   border-radius: 30px;
   margin: -20px 0 150px 0;
@@ -3330,7 +3330,7 @@ margin-top: -15px;
 }
 /* #endregion */
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   /* #region header */
   .header__burger.active {
     position: absolute;
@@ -3926,7 +3926,7 @@ margin-top: -15px;
 }
 
 .contacts-map__church {
-  width: 325px;
+  width: 305px;
   height: 325px;
   object-fit: cover;
   border-radius: 30px;
