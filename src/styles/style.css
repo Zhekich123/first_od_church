@@ -2783,7 +2783,7 @@ margin-top: -15px;
   /* #endregion */
   /* #region about-us */
 .about-us-container {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .about-us__title {
@@ -3217,7 +3217,7 @@ margin-top: -15px;
 }
 
 .donate__second-part {
-  max-width: 276px;
+  width: 100%;
   max-height: 249px;
   margin: 0 0 75px 0;
 }
@@ -3270,11 +3270,11 @@ margin-top: -15px;
 }
 
 .donate__fix-buttons {
-  margin: 36px 45px 0 45px;
+  margin: 36px 10px 0 10px;
 }
 
 .donate__fix-button {
-  width: 66px;
+  width: 70px;
   height: 27px;
   font-size: 13px;
   font-weight: 300;
@@ -3333,15 +3333,11 @@ margin-top: -15px;
   /* #region header */
   .header__burger.active {
     position: absolute;
-    top: -395px;
-    /* left: 350px; */
+    top: -200px;
+    left: 340px;
   }
   /* #endregion */
   /* #region about-us */
-.about-us-container {
-  padding: 0 20px;
-}
-
 .about-us__title {
   font-size: 20px;
 }
@@ -3375,7 +3371,7 @@ margin-top: -15px;
 /* #region shedule */
 .schedule-body {
   margin-top: 29px;
-  max-width: 380px;
+  max-width: 370px;
   max-height: 201px;
   border-radius: 25px;
   background-image: url('./images/schedule-background-small.svg');
@@ -3445,7 +3441,7 @@ margin-top: -15px;
 }
 
 #player {
-  max-width: 380px;
+  max-width: 370px;
   height: 201px;
   margin-top: 30px;
 }
@@ -3592,6 +3588,7 @@ margin-top: -15px;
 }
 
 .service-modal.active {
+  width: 90%;
   box-sizing: border-box;
 }
 
@@ -3604,7 +3601,7 @@ margin-top: -15px;
 .modalText {
   display: flex;
   flex-direction: column;
-  margin: 20px 60px 0 60px;
+  margin: 20px 10px 0 10px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -3664,7 +3661,7 @@ margin-top: -15px;
 .modal-close-btn {
   position: absolute;
   margin: 30px 0 0 0;
-  left: 250px;
+  left: 260px;
   padding: 0 30px 0 0;
 }
   /* #endregion */
@@ -3767,7 +3764,6 @@ margin-top: -15px;
 }
 
 .donate__second-part {
-  max-width: 276px;
   max-height: 249px;
   margin: 0 0 75px 0;
 }
@@ -3814,13 +3810,13 @@ margin-top: -15px;
 }
 
 .donate__field {
-  width: 44%;
+  width: 50%;
   padding: 12px 0 0 90px;
   font-size: 40px;
 }
 
 .donate__fix-buttons {
-  margin: 36px 45px 0 45px;
+  margin: 36px 15px 0 15px;
 }
 
 .donate__fix-button {
