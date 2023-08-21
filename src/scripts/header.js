@@ -19,41 +19,52 @@ items.forEach((item) => {
 });
 
 
+// nav fixed
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.querySelector(".intro__video");
+  const videoContainer = video.parentElement;
+  const logoTitle = document.querySelector('.logo-title');
+  const navItems = document.querySelectorAll(".nav__link"); 
+  const logoWhite = document.querySelector('.logo__image');
+  const logoBlack = document.querySelector('.logo__image-black');
+  const logoLink = document.querySelector('.logo__link');
+  const navList = document.querySelector('.nav__list');
+  const nav = document.querySelector('.nav');
 
 
-const nav = document.querySelector('.nav');
-const navList = document.querySelector('.nav__list');
-const navList2 = document.querySelector('.nav__list--2')
-const navLinks = document.querySelectorAll('.nav__link');
-const logoTitle = document.querySelector('.logo-title');
-const logoImage = document.querySelector('.logo__image');
-const logoImageBlack = document.querySelector('.logo__image-black');
-const headerContainer = document.querySelector('.header__container')
-const scrollThreshold = 750; 
+  function updateActiveClass() {
+    const rect = videoContainer.getBoundingClientRect();
 
-function toggleNavClasses() {
-  if (window.scrollY > scrollThreshold) {
-    nav.classList.add('active');
-    navList.classList.add('active');
-    navList2.classList.add('active');
-    navLinks.forEach(link => link.classList.add('active'));
-    logoTitle.classList.add('active');
-    logoImage.classList.add('active');
-    logoImageBlack.classList.add('active');
-    headerContainer.classList.add('active');
-  } else {
-    navList.classList.remove('active');
-    navList2.classList.remove('active');
-    nav.classList.remove('active');
-    navLinks.forEach(link => link.classList.remove('active'));
-    logoTitle.classList.remove('active');
-    logoImage.classList.remove('active');
-    logoImageBlack.classList.remove('active');
-    headerContainer.classList.remove('active');
+    if (rect.bottom <= window.innerHeight && rect.top >= -10) {
+      navItems.forEach(item => {
+        item.classList.remove('active');
+      });
+      logoTitle.classList.remove('active');
+      logoWhite.classList.remove('active');
+      logoBlack.classList.remove('active');
+      logoLink.classList.remove('inactive');
+      navList.classList.remove('active');
+      nav.classList.remove('active');
+    } else {
+      navItems.forEach(item => {
+        item.classList.add('active');
+      });
+      logoTitle.classList.add('active');
+      logoWhite.classList.add('active');
+      logoBlack.classList.add('active');
+      logoLink.classList.add('inactive');
+      navList.classList.add('active');
+      nav.classList.add('active');
+    }
   }
-}
 
-window.addEventListener('scroll', toggleNavClasses);
+  updateActiveClass();
+  window.addEventListener("scroll", updateActiveClass);
+});
+
+
+
+
 
 
 
@@ -66,6 +77,8 @@ const headerBurger = document.querySelector('.header__burger-menu');
 const navBurgerLink = document.querySelectorAll('.nav__link-burger');
 const navScroll = document.querySelector('.nav');
 const burgerBody = document.querySelector('.header__burger');
+const logoBurger = document.querySelector('.logo__image-black-burger');
+const headerContainer = document.querySelector('.header__container')
 
 function toggleMenu() {
   burgerIcon.classList.toggle('open');
@@ -74,6 +87,8 @@ function toggleMenu() {
   logoTitleScroll.classList.toggle('active');
   burgerBody.classList.toggle('active');
   document.body.classList.toggle('body-modal-open');
+  logoBurger.classList.toggle('active');
+  headerContainer.classList.toggle('active');
 
   if (nav.classList.contains('active')) {
     if (burgerBody.classList.contains('active')) {

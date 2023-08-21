@@ -295,10 +295,10 @@
           <div class="service-item service-item--1">
             <div class="service-item__info">
               <div class="service-item__top">
-                <div class="service-item__title">Дитяче</div>
+                <div class="service-item__title service-item__title--1">Дитяче</div>
               </div>
 
-              <div class="service-item__description">Ми любимо дітей і хочемо
+              <div class="service-item__description service-item__description--1">Ми любимо дітей і хочемо
                 служити дітям у нашій церкві та місті.
               </div>
 
@@ -410,10 +410,10 @@
           <div class="service-item service-item--5">
             <div class="service-item__info">
               <div class="service-item__top">
-                <div class="service-item__title">Прославлення</div>
+                <div class="service-item__title service-item__title--5">Прославлення</div>
               </div>
 
-              <div class="service-item__description">Наша місія - вести церкву 
+              <div class="service-item__description service-item__description--5">Наша місія - вести церкву 
               в поклонінні Богу від щирого серця.
               </div>
 
@@ -621,11 +621,11 @@
             <div class="donate__border"></div>
             <div class="donate__second-part">
               <div class="donate__field-body">
-                <form class="donate__form" id="donate__form" action="index.html">
+                <form id="checkout" action="http://baptist.od.ua/asset.api.php" method="post" name="assetpayments" accept-charset="utf-8">
                   <div class="donate__currency-choose">
                     <div class="donate__currency-dropdown">
                       <span class="donate__currency-choosed">₴</span>
-                      <ul class="donate__currency-list">
+                      <ul id="currency" class="donate__currency-list">
                         <li class="donate__currency-item" data-value="₴">₴</li>
                         <li class="donate__currency-item" data-value="$">$</li>
                         <li class="donate__currency-item" data-value="€">€</li>
@@ -636,11 +636,12 @@
                     </div>
                   </div>
                   <input class="donate__field"
-                  id="donate__field"
+                  id="form_sum"
                   type="text"
                   placeholder="100">
                   <div class="donate__field-border"></div>
-                </form>
+                  <input id="form_email" type="hidden" value="email@baptist.od.ua">
+              </form>
                 <div class="donate__fix-buttons">
                   <div class="donate__fix-button">100</div>
                   <div class="donate__fix-button donate__fix-button-500">500</div>

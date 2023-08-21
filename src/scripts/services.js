@@ -1,4 +1,5 @@
 'use strict';
+
 document.addEventListener('DOMContentLoaded', function() {
   const serviceItemLinks = document.querySelectorAll('.service-item__link');
   const modal = document.getElementById('modal');

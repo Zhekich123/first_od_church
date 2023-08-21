@@ -13,6 +13,9 @@ function loadYouTubePlayerAPI() {
 function createPlayer(videoId) {
   const player = new YT.Player('player', {
     videoId: videoId,
+    playerVars: {
+      autoplay: 0,
+    },
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
