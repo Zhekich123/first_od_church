@@ -1917,12 +1917,12 @@ margin-top: -45px;
   }
 
   .donate__field-border {
-    width: 100%;
-    margin-left: -15px;
+    max-width: 100%;
+    margin-left: 45px;
   }
 
   .donate__currency-choose {
-    margin: 26px 0 0 0;
+    margin: 26px 0 0 60px;
   }
 
   .donate__field {
@@ -2669,8 +2669,6 @@ margin-top: 15px;
 }
 
 @media (max-width: 500px) {
-  /* #region header */
-  /* #endregion */
   /* #region about-us */
 .about-us-container {
   padding: 0 5px;
@@ -3219,13 +3217,6 @@ margin-top: -15px;
 /* #endregion */
 }
 @media (max-width: 440px) {
-  /* #region header */
-  .header__burger.active {
-    position: absolute;
-    top: -280px;
-    left: 340px;
-  }
-  /* #endregion */
   /* #region about-us */
 .about-us__title {
   font-size: 20px;
