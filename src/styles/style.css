@@ -1478,7 +1478,7 @@ body.body-modal-open {
   display: inherit;
   position: absolute;
   z-index: 5;
-  right: 0;
+  right: 15px;
   top: 50px;
   bottom: 0;
 }
