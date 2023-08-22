@@ -621,6 +621,7 @@
             <div class="donate__border"></div>
             <div class="donate__second-part">
               <div class="donate__field-body">
+
                 <form id="checkout" action="http://baptist.od.ua/asset.api.php" method="post" name="assetpayments" accept-charset="utf-8">
                   <div class="donate__currency-choose">
                     <div class="donate__currency-dropdown">
@@ -641,15 +642,17 @@
                   placeholder="100">
                   <div class="donate__field-border"></div>
                   <input id="form_email" type="hidden" value="email@baptist.od.ua">
+                  <input id="submit_btn" type="submit" hidden value="Сплатити">
               </form>
+
                 <div class="donate__fix-buttons">
                   <div class="donate__fix-button">100</div>
                   <div class="donate__fix-button donate__fix-button-500">500</div>
                   <div class="donate__fix-button donate__fix-button-1000">1000</div>
                 </div>
-                <a href="" class="donate__pay-button" id="donate__pay-button">
+                <div class="donate__pay-button" id="donate__pay-button" onclick="form__submit()">
                   <span class="donate__pay-link">Сплатити</span>
-                </a>
+                </div>
               </div>
             </div>
           </div>

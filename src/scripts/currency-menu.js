@@ -212,3 +212,10 @@ document.addEventListener('click', function(event) {
     closeModal();
   }
 });
+
+
+
+// click button imitation
+function form__submit() {
+  document.getElementById('submit_btn').click();
+}
