@@ -1,7 +1,7 @@
 /* #region page */
 @font-face {
   font-family: 'KyivTypeTitling';
-  src: url('./fonts/kyivtypetitling/KyivTypeTitling-VarGX.ttf');
+  src: url('./fonts/kyivtypetitling/TTF/KyivTypeTitling-Heavy3.ttf');
 }
 
 html {
@@ -348,7 +348,7 @@ html {
 .schedule__title {
   color: #fff;
   font-family: 'KyivTypeTitling';
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 840;
   margin: 104px 0 0 100px;
 }
@@ -357,7 +357,7 @@ html {
   width: 3px;
   height: 371px;
   background-color: #fff;
-  margin-top: 33px;
+  margin: 20px 0 20px 0;
 }
 
 .schedule__list {
@@ -383,9 +383,13 @@ html {
   background-color: #fff;
 }
 
+.schedule__list--wrapper-friday::after {
+  height: 0;
+}
+
 .schedule__item {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   list-style: none;
 }
@@ -400,7 +404,7 @@ html {
 }
 
 .schedule__small-text {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   color: #fff;
 }
@@ -528,7 +532,7 @@ html {
 .strim__title {
   color: #202020;
   font-family: 'KyivTypeTitling';
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 840;
   padding-top: 93px;
   margin-bottom: 25px;
@@ -543,15 +547,15 @@ html {
 
 .stream__button {
   display: flex;
-  width: 398px;
-  height: 80px;
-  border-radius: 20px;
+  width: 300px;
+  height: 60px;
+  border-radius: 15px;
   border: 2px solid #202020;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #202020;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -622,7 +626,7 @@ html {
 .about-us__title {
   color: #202020;
   font-family: 'KyivTypeTitling';
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 840;
 }
 
@@ -655,7 +659,7 @@ html {
 
 .services-title {
   font-family: 'KyivTypeTitling';
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 840;
   color: #202020;
   padding-top: 98px;
@@ -792,6 +796,7 @@ body.body-modal-open {
   overflow: hidden;
   transition: transform 0.3s ease;
   margin-inline: 20px;
+  padding: 0 10px;
 }
 
 .service-item--1 {
@@ -835,56 +840,49 @@ body.body-modal-open {
 
 .service-item__title {
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   padding: 0 10px;
+  position: absolute;
+
+}
+
+.service-item__title--1 {
+  top: 55px;
 }
 
 .service-item__title--2 {
-  margin: -110px 0 0 0;
+  bottom: -20px;
 }
 
-.service-item__title--3,
-.service-item__title--6 {
-  margin: -95px 0 0 0;
+.service-item__title--4 {
+  top: 40px;
 }
 
-.service-item__title--9 {
-  margin: -55px 0 0 0;
+.service-item__title--5 {
+  top: 50px;
 }
 
 .service-item__title--7 {
-  margin: -95px 0 0 0;
+  top: 0;
 }
 
 .service-item__title--8 {
-  margin: -55px 0 0 0;
+  top: 20px;
+}
+
+.service-item__title--9 {
+  top: 40px;
 }
 
 .service-item__description {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
-  margin: 16px 0 39px 0;
+  margin: 16px 0 0 0;
   padding: 0 10px;
-}
-
-.service-item__description--2 {
-  margin: -50px 0 0 0;
-}
-
-.service-item__description--3,
-.service-item__description--6 {
-  margin: -35px 0 0 0;
-}
-
-.service-item__description--8,
-.service-item__description--9 {
-  margin: 15px 0 0 0;
-}
-
-.service-item__description--7 {
-  margin: 30px 0 0 0;
+  position: absolute;
+  bottom: 90px;
 }
 
 .service-item__description.active::after {
@@ -947,7 +945,7 @@ body.body-modal-open {
 .donate-container {
   max-height: 580px;
   border-radius: 50px;
-  border: 13px solid #202020;
+  border: 5px solid #202020;
   box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   transition: max-height 0.3s ease-in-out;
@@ -975,7 +973,7 @@ body.body-modal-open {
 
 .donate__title {
   font-family: 'KyivTypeTitling';
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 840;
   color: #202020;
   margin: 70px 25px 20px 0;
@@ -983,7 +981,7 @@ body.body-modal-open {
 
 .donate__description {
   max-width: 90%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: #202020;
   margin: 10px 0 0 0;
@@ -1004,6 +1002,7 @@ body.body-modal-open {
   border-radius: 14px;
   border: 2px solid #202020;
   cursor: pointer;
+  height: 74px;
 }
 
 .donate__paypal.active,
@@ -1029,7 +1028,7 @@ body.body-modal-open {
 .donate__paypal-img,
 .donate__moneygram-img,
 .donate__western-union-img {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .donate__moneygram,
@@ -1041,7 +1040,7 @@ body.body-modal-open {
   font-size: 13px;
   font-weight: 600;
   color: #202020;
-  margin: 0 0 5px 0;
+  margin: 0 0 8px 0;
   text-align: center;
 }
 
@@ -1245,7 +1244,10 @@ body.body-modal-open {
 
 .donate__fix-buttons {
   display: flex;
-  margin: 36px 0 0 0;
+  width: 100%;
+  margin: 36px auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .donate__fix-button {
@@ -1256,7 +1258,7 @@ body.body-modal-open {
   height: 40px;
   border-radius: 50px;
   border: 1px solid #202020;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 300;
   cursor: pointer;
 }
@@ -1274,13 +1276,14 @@ body.body-modal-open {
   align-items: center;
   justify-content: center;
   width: 377px;
-  height: 76px;
+  height: 60px;
   border: 2px solid;
-  border-radius: 20px;
+  border-radius: 15px;
   background: #202020;
   margin: 30px 30px 0 30px;
   color: #fff;
   text-decoration: none; 
+  cursor: pointer;
 }
 
 .donate__pay-button:hover {
@@ -1288,10 +1291,26 @@ body.body-modal-open {
 }
 
 .donate__pay-link {
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 600;
   color: #fff;
   text-decoration: none; 
+}
+
+.mobile__payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.apple-pay {
+  margin-right: 20px;
+}
+
+.apple-pay,
+.google-pay {
+  cursor: pointer;
 }
 /* #endregion */
 /* #endregion */
@@ -1310,13 +1329,13 @@ body.body-modal-open {
 .contacts__title {
   color: #202020;
   font-family: 'KyivTypeTitling';
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 840;
 }
 
 .contacts__description {
   color: #202020;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   margin: 31px 0 0 0;
 }
@@ -1333,7 +1352,7 @@ body.body-modal-open {
 
 .contacts__adress-text {
   color: #202020;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -1384,11 +1403,11 @@ body.body-modal-open {
   align-items: center;
   justify-content: center;
   width: 656px;
-  height: 67px;
-  border-radius: 20px;
+  height: 60px;
+  border-radius: 15px;
   border: 2px solid #202020;
   color: #202020;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none; 
   margin-top: 67px;
@@ -1455,6 +1474,10 @@ body.body-modal-open {
   justify-content: space-between;
 }
 
+.nav.active {
+  height: 85px;
+}
+
 .nav.open {
   box-sizing: border-box;
   margin: 0;
@@ -1479,7 +1502,7 @@ body.body-modal-open {
   position: absolute;
   z-index: 5;
   right: 15px;
-  top: 50px;
+  top: 40px;
   bottom: 0;
 }
 
@@ -1623,6 +1646,20 @@ body.body-modal-open {
 }
 
 /* #endregion */
+/* #region shedule */
+.schedule__backspase {
+  height: 50%;
+  margin: auto;
+}
+
+.schedule__item {
+  font-size: 20px;
+}
+
+.schedule__small-text {
+  font-size: 12px;
+}
+/* #endregion */
 /* #region stream */
 .stream-container {
   padding: 0 48px;
@@ -1640,6 +1677,8 @@ body.body-modal-open {
 .stream__button {
   width: 193px;
   height: 39px;
+  border-radius: 12px;
+  font-size: 14px;
 }
 
 .stream__link {
@@ -1703,77 +1742,61 @@ body.body-modal-open {
 
 .service-item {
   height: 370px;
+  padding: 0 15px;
+}
+
+.service-item__info {
+  margin-top: 230px;
 }
 
 .service-item__title {
-  font-size: 25px;
-  margin-top: -65px;
+  font-size: 20px;
+  margin-top: 0;
+  position: absolute;
+  bottom: 30px;
 }
 
 .service-item__description {
-  font-size: 14px;
-  margin: -15px 0 0 0;
+  font-size: 12px;
+  margin: 0 0 0 0;
+  position: absolute;
+  bottom: 70px;
 }
 
-
-.service-item__info {
-  margin-top: 260px;
+.service-item__title--1 {
+  top: 0;
 }
 
 .service-item__title--2 {
-  margin: -150px 0 0 0;
-}
 
-.service-item__title--4 {
-  margin-top: -90px
 }
 
 .service-item__title--3 {
-  margin: -135px 0 0 0;
+
+}
+
+.service-item__title--4 {
+  top: -10px;
+}
+
+.service-item__title--5 {
+  top: 0;
 }
 
 .service-item__title--6 {
-  margin: -155px 0 0 0;
+  bottom: 20px;
 }
 
 .service-item__title--7 {
-  margin: -135px 0 0 0;
+  top: -50px;
 }
 
 .service-item__title--8 {
-  margin: -110px 0 0 0;
+  top: -40px;
 }
 
 .service-item__title--9 {
-  margin: -95px 0 0 0;
-}
-
-.service-item__description--2 {
-  margin: -100px 0 0 0;
-}
-
-.service-item__description--4 {
-margin-top: -45px;
-}
-
-.service-item__description--3 {
-  margin: -85px 0 0 0;
-}
-
-.service-item__description--6 {
-  margin-top: -100px;
-}
-
-.service-item__description--8{
-  margin: -25px 0 0 0;
-}
-
-.service-item__description--7 {
-  margin: -55px 0 0 0;
-}
-
-.service-item__description--9 {
-  margin-top: -40px;
+  top: -30px;
 }
 
 .service-item__link {
@@ -1866,6 +1889,7 @@ margin-top: -45px;
   .donate-container {
     max-height: 1150px;
     margin: 0 40px;
+    border: 3px solid #202020;
   }
 
   .donate-container.active {
@@ -1941,13 +1965,13 @@ margin-top: -45px;
   .donate__fix-button {
     width: 130px;
     height: 55px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 300;
   }
 
   .donate__pay-button {
-    height: 100px;
-    margin: 60px 0 0 0;
+    height: 60px;
+    margin: 25px auto;
   }
 
   .requisites-modal {
@@ -2113,7 +2137,7 @@ margin-top: -45px;
 
 .strim__title {
   padding: 15px 0 0 0;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .stream__title--wrapper {
@@ -2159,7 +2183,7 @@ margin-top: -45px;
 }
 
 .about-us__title {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .about-us__text {
@@ -2207,7 +2231,7 @@ margin-top: -45px;
   align-items: center;
 }
 .services-title {
-  font-size: 20px;
+  font-size: 30px;
   margin: 0 75px 0 0;
   padding-top: 20px;
 }
@@ -2233,12 +2257,11 @@ margin-top: -45px;
 
 .service-item__title {
   font-size: 25px;
-  margin-top: -65px;
+  margin-top: 0;
 }
 
 .service-item__description {
   font-size: 14px;
-  margin: -15px 0 0 0;
 }
 
 .service-item__link {
@@ -2246,84 +2269,40 @@ margin-top: -45px;
   margin-top: 35px;
 }
 
-.service-item__info {
-  margin-top: 270px;
-}
-
 .service-item__title--1 {
-  margin: 20px 0 20px 0;
+ top: 50px;
 }
 
 .service-item__title--2 {
-  margin: -40px 0 20px 0;
+  top: 0;
 }
 
 .service-item__title--3 {
-  margin: -20px 0 20px 0;
+  top: 20px;
 }
 
 .service-item__title--4 {
-  margin: 20px 0 0 0;
+  top: 50px;
 }
 
 .service-item__title--5 {
-  margin: 10px 0 20px 0;
+  top: 50px;
 }
 
 .service-item__title--6 {
-  margin: -15px 0 10px 0;
+  top: 20px;
 }
 
 .service-item__title--7 {
-  margin: -10px 0 20px 0;
+  top: 35px;
 }
 
 .service-item__title--8 {
-  margin: 10px 0 15px 0;
+  top: 50px;
 }
 
 .service-item__title--9 {
-  margin: 0 0 15px 0;
-}
-
-.service-item__description {
-  margin-top: 25px;
-} 
-
-.service-item__description--1 {
-  margin-top: 0;
-}
-
-.service-item__description--2 {
-  margin-top: 0;
-}
-
-.service-item__description--4 {
-margin-top: 15px;
-}
-
-.service-item__description--5 {
-  margin-top: 0;
-}
-
-.service-item__description--6 {
-  margin-top: 0;
-}
-
-.service-item__description--3 {
-  margin-top: 0;
-}
-
-.service-item__description--8 {
-  margin-top: 0;
-}
-
-.service-item__description--7 {
-  margin-top: 0;
-}
-
-.service-item__description--9 {
-  margin-top: 0;
+  top: 35px;
 }
 
 .service-modal.active {
@@ -2415,6 +2394,7 @@ margin-top: 15px;
   max-height: 640px;
   max-width: 381px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .donate-container.active {
@@ -2547,18 +2527,19 @@ margin-top: 15px;
   margin: 12px 0 0 -25px;
 }
 
-.donate__form {
-  margin: 50px 0 0 45px;
+#checkout {
+  margin-top: 20px;
 }
 
 .donate__field {
   width: 44%;
-  padding: 12px 0 0 140px;
+  padding: 12px 0 0 110px;
   font-size: 40px;
+  margin: 0 0 0 20px;
 }
 
 .donate__fix-buttons {
-  margin: 36px 45px 0 45px;
+  margin: 36px 0 0 0;
 }
 
 .donate__fix-button {
@@ -2572,7 +2553,11 @@ margin-top: 15px;
   width: 156px;
   height: 39px;
   border-radius: 9px;
-  margin: 34px 0px 38px 0;
+  margin: 20px auto;
+}
+
+.mobile__payment {
+  margin: 0 0 40px 0;
 }
 
 .donate__pay-link {
@@ -2634,7 +2619,7 @@ margin-top: 15px;
 }
 
 .contacts__title {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .contacts__description,
@@ -2705,6 +2690,7 @@ margin-top: 15px;
 
 .about-us__info {
   margin-top: 50px;
+  padding: 0 20px;
 }
 
 .slider {
@@ -2838,110 +2824,18 @@ margin-top: 15px;
 }
 
 .service-item__title {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: -65px;
 }
 
 .service-item__description {
-  font-size: 14px;
+  font-size: 12px;
   margin: -15px 0 0 0;
 }
 
 .service-item__link {
   font-size: 10px;
   margin-top: 35px;
-}
-
-.service-item__info {
-  margin-top: 270px;
-}
-
-.service-item__title--2 {
-  margin: -100px 0 0 0;
-}
-
-.service-item__title--4 {
-  margin-top: -60px
-}
-
-.service-item__title--3 {
-  margin: -95px 0 0 0;
-}
-
-.service-item__title--6 {
-  margin: -100px 0 0 0;
-}
-
-.service-item__title--7 {
-  margin: -75px 0 0 0;
-}
-
-.service-item__title--8 {
-  margin: -65px 0 0 0;
-}
-
-.service-item__title--9 {
-  margin: -95px 0 0 0;
-}
-
-.service-item__description--2 {
-  margin: -60px 0 0 0;
-}
-
-.service-item__description--4 {
-margin-top: -15px;
-}
-
-.service-item__description--3 {
-  margin: -45px 0 0 0;
-}
-
-.service-item__description--6 {
-  margin-top: -50px;
-}
-
-.service-item__description--8{
-  margin: -15px 0 0 0;
-}
-
-.service-item__description--7 {
-  margin: -25px 0 0 0;
-}
-
-.service-item__description--9 {
-  margin-top: -40px;
-}
-
-.service-item__link--1 {
-  margin-top: -10px;
-}
-
-.service-item__link--2 {
-  margin-top: 30px;
-}
-
-.service-item__link--9 {
-  margin-top: 45px;
-}
-
-.service-item__link--3 {
-  margin-top: 35px;
-}
-
-.service-item__link--4  {
-  margin-top: 35px;
-}
-
-.service-item__link--8 {
-  margin-top: 35px;
-}
-
-.service-item__link--6 {
-  margin-top: 40px;
-}
-
-.service-item__link--7 {
-  margin-top: 30px;
 }
 
 .service-modal.active {
@@ -3034,6 +2928,7 @@ margin-top: -15px;
   max-height: 640px;
   max-width: 290px;
   margin: 0 auto;
+  padding: 0 35px;
 }
 
 .donate-container.active {
@@ -3061,7 +2956,7 @@ margin-top: -15px;
   font-size: 20px;
   font-weight: 840;
   padding: 10px 330px 0 0;
-  margin: 20px 0 0 0;
+  margin: 20px 0 5px 0;
 }
 
 .donate__description {
@@ -3117,6 +3012,7 @@ margin-top: -15px;
   width: 78px;
   height: 52px;
   font-weight: 600;
+  font-size: 30px;
 }
 
 .donate__border {
@@ -3170,7 +3066,7 @@ margin-top: -15px;
 
 .donate__field {
   width: 44%;
-  padding: 12px 0 0 110px;
+  padding: 12px 0 0 90px;
   font-size: 40px;
 }
 
@@ -3179,7 +3075,7 @@ margin-top: -15px;
 }
 
 .donate__fix-buttons {
-  margin: 36px 10px 0 10px;
+  margin: 36px 0 0 0;
 }
 
 .donate__fix-button {
@@ -3193,7 +3089,7 @@ margin-top: -15px;
   width: 156px;
   height: 39px;
   border-radius: 9px;
-  margin: 34px 0px 38px 0;
+  margin: 15px auto;
 }
 
 .donate__pay-link {
@@ -3405,96 +3301,8 @@ margin-top: -15px;
   margin-top: 35px;
 }
 
-.service-item__info {
-  margin-top: 270px;
-}
-
-.service-item__title--2 {
-  margin: -100px 0 0 0;
-}
-
 .service-item__title--4 {
-  margin-top: -60px
-}
-
-.service-item__title--3 {
-  margin: -95px 0 0 0;
-}
-
-.service-item__title--6 {
-  margin: -100px 0 0 0;
-}
-
-.service-item__title--7 {
-  margin: -75px 0 0 0;
-}
-
-.service-item__title--8 {
-  margin: -65px 0 0 0;
-}
-
-.service-item__title--9 {
-  margin: -95px 0 0 0;
-}
-
-.service-item__description--2 {
-  margin: -60px 0 0 0;
-}
-
-.service-item__description--4 {
-margin-top: -15px;
-}
-
-.service-item__description--3 {
-  margin: -55px 0 0 0;
-}
-
-.service-item__description--6 {
-  margin-top: -50px;
-}
-
-.service-item__description--8{
-  margin: -15px 0 0 0;
-}
-
-.service-item__description--7 {
-  margin: -25px 0 0 0;
-}
-
-.service-item__description--9 {
-  margin-top: -40px;
-}
-
-.service-item__link--1 {
-  margin-top: -10px;
-}
-
-.service-item__link--2 {
-  margin-top: 30px;
-}
-
-.service-item__link--9 {
-  margin-top: 45px;
-}
-
-.service-item__link--3 {
-  margin-top: 15px;
-}
-
-.service-item__link--4  {
-  margin-top: 15px;
-}
-
-.service-item__link--8 {
-  margin-top: 35px;
-}
-
-.service-item__link--6 {
-  margin-top: 20px;
-}
-
-.service-item__link--7 {
-  margin-top: 30px;
+  top: 30px;
 }
 
 .service-modal.active {

@@ -15,6 +15,7 @@ numberInput.oninput = function (event) {
   }
 };
 
+
 const arrowElement = document.querySelector('.donate__currency-arrow');
 const currencyDropdown = document.querySelector('.donate__currency-dropdown');
 const selectedCurrency = document.querySelector('.donate__currency-choosed');
