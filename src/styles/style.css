@@ -362,7 +362,7 @@ html {
 
 .schedule__list {
   padding: 0;
-  margin: -20px 40px 0 0;
+  margin: 3px 60px 0 0;
 }
 
 .schedule__list--wrapper {
@@ -540,7 +540,7 @@ html {
 
 .stream__email {
   color: #202020;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 54px;
 }
@@ -844,35 +844,7 @@ body.body-modal-open {
   font-weight: 600;
   padding: 0 10px;
   position: absolute;
-
-}
-
-.service-item__title--1 {
-  top: 55px;
-}
-
-.service-item__title--2 {
-  bottom: -20px;
-}
-
-.service-item__title--4 {
-  top: 40px;
-}
-
-.service-item__title--5 {
-  top: 50px;
-}
-
-.service-item__title--7 {
-  top: 0;
-}
-
-.service-item__title--8 {
-  top: 20px;
-}
-
-.service-item__title--9 {
-  top: 40px;
+  top: 30px;
 }
 
 .service-item__description {
@@ -1746,14 +1718,18 @@ body.body-modal-open {
 }
 
 .service-item__info {
-  margin-top: 230px;
+  margin-top: 160px;
 }
 
 .service-item__title {
   font-size: 20px;
   margin-top: 0;
   position: absolute;
-  bottom: 30px;
+  top: 50px;
+}
+
+.service-item__title--8 {
+  top: 30px;
 }
 
 .service-item__description {
@@ -1761,42 +1737,6 @@ body.body-modal-open {
   margin: 0 0 0 0;
   position: absolute;
   bottom: 70px;
-}
-
-.service-item__title--1 {
-  top: 0;
-}
-
-.service-item__title--2 {
-
-}
-
-.service-item__title--3 {
-
-}
-
-.service-item__title--4 {
-  top: -10px;
-}
-
-.service-item__title--5 {
-  top: 0;
-}
-
-.service-item__title--6 {
-  bottom: 20px;
-}
-
-.service-item__title--7 {
-  top: -50px;
-}
-
-.service-item__title--8 {
-  top: -40px;
-}
-
-.service-item__title--9 {
-  top: -30px;
 }
 
 .service-item__link {
@@ -2258,6 +2198,7 @@ body.body-modal-open {
 .service-item__title {
   font-size: 25px;
   margin-top: 0;
+  top: 110px;
 }
 
 .service-item__description {
@@ -2267,42 +2208,6 @@ body.body-modal-open {
 .service-item__link {
   font-size: 10px;
   margin-top: 35px;
-}
-
-.service-item__title--1 {
- top: 50px;
-}
-
-.service-item__title--2 {
-  top: 0;
-}
-
-.service-item__title--3 {
-  top: 20px;
-}
-
-.service-item__title--4 {
-  top: 50px;
-}
-
-.service-item__title--5 {
-  top: 50px;
-}
-
-.service-item__title--6 {
-  top: 20px;
-}
-
-.service-item__title--7 {
-  top: 35px;
-}
-
-.service-item__title--8 {
-  top: 50px;
-}
-
-.service-item__title--9 {
-  top: 35px;
 }
 
 .service-modal.active {
@@ -2825,7 +2730,7 @@ body.body-modal-open {
 
 .service-item__title {
   font-size: 20px;
-  margin-top: -65px;
+  top: 60px;
 }
 
 .service-item__description {
@@ -3141,7 +3046,7 @@ body.body-modal-open {
 }
 
 .about-us__text {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .about-us__info {
@@ -3177,13 +3082,13 @@ body.body-modal-open {
 
 .schedule__title {
   font-size: 20px;
-  margin: 50px 15px 0 5px;
+  margin: 50px 15px 0 20px;
 }
 
 .schedule__backspase {
   width: 2px;
   height: 138px;
-  margin: 15px 19px 0 0;
+  margin: 15px 15px 0 0;
 }
 
 .schedule__list--wrapper {
@@ -3191,7 +3096,7 @@ body.body-modal-open {
 }
 
 .schedule__list {
-  margin: 0 0 0 0;
+  margin: 5px 10px 0 0;
 }
 
 .schedule__item {
@@ -3288,11 +3193,11 @@ body.body-modal-open {
 
 .service-item__title {
   font-size: 25px;
-  margin-top: -65px;
+  top: 45px;
 }
 
 .service-item__description {
-  font-size: 14px;
+  font-size: 13px;
   margin: -15px 0 0 0;
 }
 
