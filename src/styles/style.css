@@ -2990,6 +2990,11 @@ body.body-modal-open {
   font-weight: 300;
 }
 
+.donate__fix-button-500,
+.donate__fix-button-1000 {
+  margin-left: 15px;
+}
+
 .donate__pay-button {
   width: 156px;
   height: 39px;
