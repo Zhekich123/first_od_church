@@ -3086,7 +3086,7 @@ body.body-modal-open {
 }
 
 .schedule__backspase {
-  width: 2px;
+  width: 1px;
   height: 138px;
   margin: 15px 15px 0 0;
 }
@@ -3167,6 +3167,7 @@ body.body-modal-open {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .services-title {
   font-size: 20px;
@@ -3187,7 +3188,7 @@ body.body-modal-open {
 
 .service-item {
   height: 360px;
-  width: 332px;
+  width: 322px;
   margin: 28px 0 0 0;
 }
 
