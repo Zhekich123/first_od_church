@@ -2730,7 +2730,7 @@ body.body-modal-open {
 
 .service-item__title {
   font-size: 20px;
-  top: 60px;
+  top: 50px;
 }
 
 .service-item__description {
@@ -3199,7 +3199,11 @@ body.body-modal-open {
 
 .service-item__title {
   font-size: 25px;
-  top: 45px;
+  top: 40px;
+}
+
+.service-item__title--8 {
+  top: 25px;
 }
 
 .service-item__description {
