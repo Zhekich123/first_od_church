@@ -120,7 +120,7 @@ html {
 .nav__link {
   position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;  
@@ -2458,11 +2458,11 @@ body.body-modal-open {
   width: 156px;
   height: 39px;
   border-radius: 9px;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 .mobile__payment {
-  margin: 0 0 40px 0;
+  margin: 0 0 70px 0;
 }
 
 .donate__pay-link {
@@ -2999,7 +2999,7 @@ body.body-modal-open {
   width: 156px;
   height: 39px;
   border-radius: 9px;
-  margin: 15px auto;
+  margin: 20px auto 20px auto;
 }
 
 .donate__pay-link {
