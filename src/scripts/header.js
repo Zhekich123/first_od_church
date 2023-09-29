@@ -101,7 +101,7 @@ function toggleMenu() {
   }
 }
 
-burgerIcon.addEventListener('click', toggleMenu);
+burgerBody.addEventListener('click', toggleMenu);
 
 navBurgerLink.forEach(link => {
   link.addEventListener('click', function () {
