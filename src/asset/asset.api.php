@@ -130,8 +130,9 @@ class AssetPayments
 
 //Creates payment request
     $requestCreatePayment = Array(
-		'ProcessingId' => 1642, // Required,
+		'ProcessingId' => 3773, // Required,
 		'TemplateId' => 0,
+    'SkipCheckout' => true,
 		'OperationMode' => 'Iframe',
 		'TransactionType' => 'Sale', //Required
 		'MerchantInternalOrderId' => 'Donation',
@@ -157,8 +158,15 @@ class AssetPayments
                 'AssetPaymentsKey' => $merchantGuid,  // Required
 		'IpAddress' => '10.10.10.127',
 			);
+
+    // echo "req: <br>\n";
+    // print_r($requestCreatePayment);
+
     $result = $asset->CreatePayment($requestCreatePayment);
-	//var_dump ($result);
+
+    // echo "resp: <br>\n";
+    // print_r($result);
+
 	$externalForm  = $result['htmlIframeForm']; // External form to redirect user. This form should be showed on user web page
     $OrderId = $result['transactionId']; //Order uniq id
 

@@ -8,7 +8,7 @@ numberInput.oninput = function (event) {
   const inputText = event.target.value;
   const cleanedInput = inputText.replace(/\D/g, '');
 
-  if (cleanedInput <= 0) { // Исправленное условие здесь
+  if (cleanedInput <= 0) { 
     event.target.value = '';
   } else {
     event.target.value = cleanedInput;
@@ -65,6 +65,8 @@ fixButtons.forEach(button => {
 
 // for Requisites
 
+const donateFirstPart = document.querySelector('.donate__first-part');
+
 const buttonsBlocks = document.querySelectorAll('.donate__buttons > div');
 const requisitesBlocks = document.querySelectorAll('.donate__requisites > a');
 
@@ -90,6 +92,7 @@ function openModal(data, block) {
   document.querySelector('.donate-container').classList.add('active');
 
   const modalTitle = document.getElementById('dynamicTitle');
+  const modalTitle3 = document.getElementById('dynamicTitle3');
   const modalName = document.getElementById('dynamicName');
   const modalText = document.getElementById('dynamicText');
   const modalEmail = document.getElementById('dynamicEmail');
@@ -101,6 +104,7 @@ function openModal(data, block) {
   const modalDisc = document.getElementById('dynamicDisc');
 
   modalTitle.textContent = data.title;
+  modalTitle3.textContent = data.title3;
   modalName.textContent = data.name;
   modalText.textContent = data.text;
   modalEmail.textContent = data.email;
@@ -121,17 +125,14 @@ function openModal(data, block) {
     }
   }
 
-  // Возвращаем изображения к исходному состоянию перед активацией новой кнопки
   paypalImage.src = './src/styles/images/paypal-logo.svg';
   moneygramImage.src = './src/styles/images/moneygram-logo.svg';
   westernImage.src = './src/styles/images/westernunion-logo.svg';
 
-  // Возвращаем цвет текста к исходному состоянию перед активацией новой кнопки
   paypalText.style.color = '#202020';
   moneygramText.style.color = '#202020';
   westernText.style.color = '#202020';
 
-  // Обновляем изображения и цвет текста, если кнопка активна
   if (block.classList.contains('donate__paypal')) {
     paypalImage.src = paypalWhite;
     paypalText.style.color = '#fff';
@@ -155,12 +156,10 @@ function closeModal() {
     activeButton = null;
   }
 
-  // Возвращаем изображения к исходному состоянию
   paypalImage.src = './src/styles/images/paypal-logo.svg';
   moneygramImage.src = './src/styles/images/moneygram-logo.svg';
   westernImage.src = './src/styles/images/westernunion-logo.svg';
-  
-  // Возвращаем цвет текста к исходному состоянию
+
   paypalText.style.color = '#202020';
   moneygramText.style.color = '#202020';
   westernText.style.color = '#202020';
@@ -208,15 +207,23 @@ requisitesBlocks.forEach(block => {
 
 document.addEventListener('click', function(event) {
   const target = event.target;
+  donateFirstPart.classList.add('active');
 
   if (!target.closest('.requisites-modal') && !target.closest('.donate__requisites') && !target.closest('.donate__buttons')) {
+    donateFirstPart.classList.remove('active');
     closeModal();
   }
 });
 
 
 
-// click button imitation
+// Pay-button imitation and form data function
+function setCurrency(element) {
+  let currencySymbol = element.dataset.value;
+  document.getElementById('form_currency').value = currencySymbol;
+}
+
 function form__submit() {
   document.getElementById('submit_btn').click();
 }
+
