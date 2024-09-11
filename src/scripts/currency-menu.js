@@ -217,13 +217,13 @@ document.addEventListener('click', function(event) {
 
 
 
-// Pay-button imitation and form data function
+//Pay-button imitation and form data function
 function setCurrency(element) {
   let currencySymbol = element.dataset.value;
   document.getElementById('form_currency').value = currencySymbol;
 }
 
-function form__submit() {
-  document.getElementById('submit_btn').click();
-}
+// function form__submit() {
+//   document.getElementById('submit_btn').click();
+// }
 
