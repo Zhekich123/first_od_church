@@ -17,6 +17,14 @@ html {
   background-color: #fff;
 }
 
+.body_oferta {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1340,6 +1348,10 @@ body.body-modal-open {
   font-weight: 840;
 }
 
+.email_title {
+  margin-top: 30px;
+}
+
 .contacts__description {
   color: #202020;
   font-size: 20px;
@@ -1441,6 +1453,29 @@ body.body-modal-open {
 .footer-year {
   margin-top: 3px;
 }
+
+.footer-oferta {
+  color: #000;
+  /* text-decoration: none; */
+
+  margin-top: 10px;
+  transition: text-shadow 0.1s ease; /* Плавное изменение тени */
+}
+
+.footer-oferta:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* x-offset y-offset blur-radius color */
+}
+/* #endregion */
+
+/* #region oferta*/
+.oferta_container {
+  margin: 0 50px;
+}
+  .sub_title {
+    font-weight: 700;
+    margin: 40px 0 0 0;
+  }
+
 /* #endregion */
 
 /* #region thanks-page */
@@ -2084,7 +2119,8 @@ body.body-modal-open {
 /* #endregion */
 /* #region footer */
   .footer-city,
-  .footer-year {
+  .footer-year,
+  .footer-oferta {
     font-size: 14px;
   }
   /* #endregion */
@@ -2667,7 +2703,8 @@ body.body-modal-open {
   margin: 18px 0;
 }
 .footer-city,
-.footer-year {
+.footer-year,
+.footer-oferta {
   font-size: 10px;
 }
 /* #endregion */
